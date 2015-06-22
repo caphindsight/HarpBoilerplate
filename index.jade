@@ -2,9 +2,10 @@ extends /_private/layouts/default.jade
 
 block head
     title Harp boilerplate
+    +import_mathjax
 
 block body
     +container
         br
-        h1 It works!
+        include:markdown _document.md
 
