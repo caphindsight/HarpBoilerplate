@@ -2,4 +2,8 @@
 
 mixin glyphicon(name)
     span(class="glyphicon glyphicon-#{name}", aria-hidden="true")
+    | &nbsp;
+
+mixin container
+    .container: .row: .col-md-12: block
 
