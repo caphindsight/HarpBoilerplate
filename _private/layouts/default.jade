@@ -1,0 +1,20 @@
+//- Default jade layout
+
+include /_private/utils/imports.jade
+include /_private/utils/bootstrap.jade
+
+block vars
+
+doctype html
+
+html
+    head
+        +import_bootstrap
+        +import_stylesheet("/styles/global.css")
+        +import_script("/scripts/global.js")
+
+        block head
+
+    body
+        block body
+

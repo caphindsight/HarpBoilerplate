@@ -1,0 +1,17 @@
+//- Resource import mixins
+
+//- Import a stylesheet
+mixin import_stylesheet(url)
+    link(rel="stylesheet", type="text/css", href=url)
+
+//- Import a script
+mixin import_script(url)
+    script(src=url)
+
+
+//- Import twitter bootstrap (locally)
+mixin import_bootstrap
+    +import_stylesheet("/contrib/bootstrap/css/bootstrap.min.css")
+    +import_stylesheet("/contrib/bootstrap/css/bootstrap-theme.min.css")
+    +import_script("/contrib/bootstrap/js/bootstrap.min.js")
+
